@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Learn how to create a basic Redux clone
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
