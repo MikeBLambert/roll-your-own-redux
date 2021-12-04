@@ -1,4 +1,4 @@
-import { useSelector } from "react-redux";
+import { useSelector } from "../react-redux";
 import { UserDetails } from "../components";
 import { getBirthday } from "../reducers/birthday";
 import { getFullName } from "../reducers/name";

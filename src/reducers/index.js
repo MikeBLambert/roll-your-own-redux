@@ -1,4 +1,4 @@
-import { combineReducers } from "redux";
+import { combineReducers } from "../redux";
 import name from "./name";
 import birthday from "./birthday";
 

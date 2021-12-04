@@ -1,4 +1,4 @@
-import { validateBirthday } from "../../api";
+import { validateBirthday } from "../api";
 
 const initialState = { value: "", isLoading: false, error: "" };
 
@@ -33,6 +33,7 @@ const onNotValid = () => ({ type: NOT_VALID });
 
 // THUNK
 export const updateBirthday = (value) => async (dispatch) => {
+  console.log({ dispatch });
   dispatch(update(value));
   const isValid = await validateBirthday(value);
 

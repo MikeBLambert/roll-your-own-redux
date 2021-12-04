@@ -2,21 +2,14 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { UserDetails, Birthday, Name } from "./pages";
 
 import "./App.css";
-import { Provider } from "react-redux";
+import { Provider } from "./react-redux";
 
-import { applyMiddleware, compose, createStore } from "redux";
-import thunk from "redux-thunk";
+import { applyMiddleware, createStore } from "./redux";
+import thunk from "./redux-thunk";
 import reducers from "./reducers";
 import Home from "./components/Home";
 
-const store = createStore(
-  reducers,
-  compose(
-    applyMiddleware(thunk),
-    window.__REDUX_DEVTOOLS_EXTENSION__ &&
-      window.__REDUX_DEVTOOLS_EXTENSION__(),
-  ),
-);
+const store = createStore(reducers, applyMiddleware(thunk));
 
 function App() {
   return (
