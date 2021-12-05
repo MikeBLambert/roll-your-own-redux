@@ -1,10 +1,9 @@
 import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { UserDetails, Birthday, Name } from "./components";
+import { UserDetails, Birthday, Name, Home } from "./pages";
 
 import "./App.css";
 import { validateBirthday } from "./api";
-import Home from "./components/Home";
 
 function App() {
   const [name, setName] = useState({ first: "", last: "" });

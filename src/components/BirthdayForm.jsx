@@ -1,11 +1,7 @@
-import { useNavigate } from "react-router";
-
-const Birthday = ({ isSubmitDisabled, birthday, updateBirthday }) => {
-  const navigate = useNavigate();
-
+const Birthday = ({ isSubmitDisabled, birthday, updateBirthday, onSubmit }) => {
   return (
     <>
-      <form onSubmit={() => navigate("/user-details")}>
+      <form onSubmit={onSubmit}>
         <div>
           <label htmlFor="birthday">Birthday</label>
           <input
