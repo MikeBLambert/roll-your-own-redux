@@ -31,7 +31,6 @@ export const Provider = ({ children, store }) => {
       );
     });
   };
-  console.log(store);
   return (
     <ReduxContext.Provider
       value={{ dispatch: store.middleware(dispatch, getState), getState }}
